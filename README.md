@@ -1,10 +1,25 @@
-- 👋 Hi, I’m @HaiziIzzudin
-- 👀 I’m interested in experimenting maching learning, trying github project and work on softwares in Windows and/or Android
-- 🌱 I’m a ex college student who has learned Computer Science
-- 💞️ I didn't know how to use GitHub 😀
-- 📫 Tiktok: @haiziizzudin
+# YouTube ReVanced Magisk Module (Haizi's Way)
 
-<!---
-HaiziIzzudin/HaiziIzzudin is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+## To configure and build magisk module:
+1. Edit the patcher args in [`build.conf`](./build.conf)
+2. Run the [workflow](../../actions/workflows/build.yml).
+
+File will be available in the releases after run finished.
+
+### The modules support Magisk update which means you will receive updates from your Magisk app, downloading from github releases and reflashing is not necessary.
+
+## How to install
+1. Download both YouTube APK and the magisk module zip from [releases](../../releases)
+2. Install APK
+3. Open magisk, locate to modules.
+4. Click "Install from storage".
+5. Click "YouTube-versionnumber.zip", wait for magisk to install the zip.
+6. Reboot
+
+### Please note that this tutorial will NOT be preventing PlayStore from updating the YouTube APK.
+
+## After successful restart, please check if:
+1. there is any ads when you play video and try to lock the screen to test for audio background playback.
+2. If video player glitched, do give it multiple app close and restarts. This will mitigate some of the early issues you may encounter, this includes:
+    * Video Player play/pause button did not hide on dismiss.
+    * Video player app still uses the old design (bold and bulky) play/pause button, and still have the peek of "swipe up for sugegsted videos". The new one should have a thin and light play/pause button, and all the comments, like dislike, share and add-to-playlist button below the seekbar (during fullscreen), and button for "More videos" at the bottom right corner of fullscreen player.
