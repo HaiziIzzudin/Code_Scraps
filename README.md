@@ -1,13 +1,3 @@
-# YouTube ReVanced Magisk Module (Haizi's Way)
-
-## To configure and build magisk module:
-1. Edit the patcher args in [`build.conf`](./build.conf)
-2. Run the [workflow](../../actions/workflows/build.yml).
-
-File will be available in the releases after run finished.
-
-### The modules support Magisk update which means you will receive updates from your Magisk app, downloading from github releases and reflashing is not necessary.
-
 ## How to install
 1. Download both YouTube APK and the magisk module zip from [releases](../../releases)
 2. Install APK
