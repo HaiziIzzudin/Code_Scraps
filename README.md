@@ -1,10 +1,10 @@
 ## How to install
-1. Download both YouTube APK and the magisk module zip from [releases](../../releases)
-2. Install APK
-3. Open magisk, locate to modules.
-4. Click "Install from storage".
-5. Click "YouTube-versionnumber.zip", wait for magisk to install the zip.
-6. Reboot
+1. Download magisk module zip from [releases](https://github.com/HaiziIzzudin/rvncd/releases)
+2. Open magisk, locate to modules.
+3. Click "Install from storage".
+4. Click "YouTube-versionnumber.zip", wait for magisk to install the zip.
+5. Do not reboot. Repeat step 3 to 4 but flash ytmusic module instead.
+6. Reboot.
 
 ### Please note that this tutorial will NOT be preventing PlayStore from updating the YouTube APK.
 
