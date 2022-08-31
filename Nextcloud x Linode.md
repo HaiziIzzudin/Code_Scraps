@@ -20,7 +20,6 @@ Wait for your linode to provisioning, booting, and running. Proceed to Part 2
   ```
   read -e -p "Enter in a new nickname: " nickname; adduser $nickname; usermod -aG sudo $nickname; logout;
   ```
-  - *replace <nickname> with your short name* 
   - *enter in new password if asked. Make sure its rememberable, or just use the same password from STEP 6*
   - *any other questionaire that may asked by the terminal you can press enter to leave blank*
 
