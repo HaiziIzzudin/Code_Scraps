@@ -1,3 +1,5 @@
+Firstly, launch LISH terminal and switch to Glish.
+
 C&P this code into terminal:
 ```
 sudo apt-get update && sudo apt-get upgrade
