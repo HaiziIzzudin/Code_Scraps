@@ -2,4 +2,4 @@
 
 [ReVanced Root Install Instructions](https://github.com/HaiziIzzudin/reference/blob/main/For%20Vanced%20Readme.md)
 
-[FFmpeg Linux One Line Copy and Paste](https://github.com/HaiziIzzudin/reference/blob/main/linux-oneliner.md)
+[Multimedia Tools Installer for Linux](https://github.com/HaiziIzzudin/reference-garbage-scripts/blob/main/multimedia-tools-installer-linux.md)
