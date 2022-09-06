@@ -17,6 +17,11 @@ sudo apt install unzip;
 unzip ytarchive_linux_amd64.zip; 
 rm ./ytarchive_linux_amd64.zip; 
 
+echo "Doing aliases...";
+alias ffmpeg=~/ffmpeg;
+alias yt-dlp=~/yt-dlp;
+alias ytarchive=~/ytarchive;
+
 echo "Multimedia utilities installation has finished.";
 echo "REMINDER: Use ./ffmpeg OR ./yt-dlp OR ./ytarchive";
 
