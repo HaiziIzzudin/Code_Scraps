@@ -1,8 +1,10 @@
 First, C&P this into terminal:
 ```
-read -e -p "Enter in username: " usernamed; adduser $usernamed; usermod -aG sudo $usernamed;
+read -e -p "Enter in username: " usernamed; adduser $usernamed; usermod -aG sudo $usernamed; logout;
 ```
-Then, launch LISH terminal and switch to Glish.
+Switch to Glish.
+
+On a localhost login, enter in username and password (the NOT ROOT one) that you entered recently.
 
 C&P this code into terminal:
 ```
