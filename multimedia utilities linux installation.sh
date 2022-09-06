@@ -1,6 +1,7 @@
 echo "Now running installation of multimedia tools...";
 
 echo "Installing ffmpeg";
+cd ~/;
 wget https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz; 
 tar -xf ffmpeg-master-latest-linux64-gpl.tar.xz; 
 cd ffmpeg-master-latest-linux64-gpl/bin; 
@@ -9,9 +10,11 @@ cd ~/;
 rm -r ./ffmpeg-master-latest-linux64-gpl ./ffmpeg-master-latest-linux64-gpl.tar.xz;
 
 echo "Installing yt-dlp...";
+cd ~/;
 wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp;
 
 echo "Installing ytarchive";
+cd ~/;
 wget https://github.com/Kethsar/ytarchive/releases/download/latest/ytarchive_linux_amd64.zip; 
 sudo apt install unzip; 
 unzip ytarchive_linux_amd64.zip; 
