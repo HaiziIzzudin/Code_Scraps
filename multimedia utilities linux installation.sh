@@ -20,21 +20,13 @@ sudo apt install unzip;
 unzip ytarchive_linux_amd64.zip; 
 rm ./ytarchive_linux_amd64.zip; 
 
+echo "Making yt-dlp executable...";
+cd ~/;
+sudo chmod +x ./yt-dlp
+
 echo "Doing aliases...";
-alias ffmpeg=~/ffmpeg;
-alias yt-dlp=~/yt-dlp;
-alias ytarchive=~/ytarchive;
+cd ~/; alias ffmpeg=./ffmpeg; alias yt-dlp=./yt-dlp; alias ytarchive=./ytarchive;
 
+clear;
 echo "Multimedia utilities installation has finished.";
-echo "REMINDER: Use ./ffmpeg OR ./yt-dlp OR ./ytarchive";
-
-
-# ============== H265 =============
-# -r 60 -g 600 -c:v libx265 -crf 41 -preset fast -c:a copy
-# (use TAB to autocomplete filename)";
-
-
-# ================ AV1 (if content is youtube archive/delivery on platform except youtube) ===============
-# -c:v libaom-av1 -r 60 -g 600 -keyint_min 600 -crf 49 -b:v 0 -cpu-used 8 -row-mt 1 -c:a copy
-
-
+echo "HOW TO USE: directly type ffmpeg/yt-dlp/ytarchive";
