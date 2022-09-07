@@ -1,3 +1,4 @@
+clear;
 echo "Now running installation of multimedia tools...";
 
 echo "Installing ffmpeg";
