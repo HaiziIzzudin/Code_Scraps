@@ -29,18 +29,18 @@ else {
 }
 
 $omitvfilter = Read-Host -Prompt "Do you want to include video filter?`n(Useful if you want to keep consistency around your encoding.) [y/n]";
-if ($omitvfilter -ne "y") { Write-Host "Skipping video filter parameter..."; }
+if ($omitvfilter -eq "y") { Write-Host "Skipping video filter parameter..."; }
 else {
     $inputframerate = Read-Host -Prompt "Please input frame rate of this video.`nTIP: It is a best practice to input integer like 30 or 60. Floating point like 23.976 is not recommended.";
 }
 
-$finalecommand = ab-av1 auto-encode -e $encoder -i $inputpath --keyint $inputkeyint --min-vmaf $inputminvmaf --preset $speed --vfilter "fps=$inputframerate"
+$finalecommand = ab-av1 auto-encode -e $encoder -i $inputpath --keyint $inputkeyint --min-vmaf $inputminvmaf --preset $speed --acodec copy --min-crf 5;
 
 Write-Host "Your final combined commands is:";
 if ($omitvfilter -eq "y") {
-    Write-Host "$finalecommand --acodec copy --min-crf 5";
+    Write-Host "$finalecommand";
 }
 else {
-    Write-Host $finalecommand;
+    $finalecommandwithvfilter = "$finalecommand --vfilter 'fps=$inputframerate'"; 
+    Write-Host $finalecommandwithvfilter;
 }
-
