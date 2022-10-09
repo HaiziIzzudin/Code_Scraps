@@ -40,6 +40,8 @@ $omitvfilter = Read-Host -Prompt "Do you want to skip video filter?`n(Useful if 
 if ($omitvfilter -eq "y") { Write-Host "Skipping video filter parameter..."; }
 else {
     $inputframerate = Read-Host -Prompt "Please input frame rate of this video.`nTIP: It is a best practice to input integer like 30 or 60. Floating point like 23.976 is not recommended.";
+    $starttime = Read-Host -Prompt "Please input start time of the video.`nATTENTION: Format of writing time MUST follow [HH:MM:SS] format (without the square bracket).`n(Leave blank to leave start time untouched)";
+    $endtime = Read-Host -Prompt "Please input end time of the video.`nATTENTION: Format of writing time MUST follow [HH:MM:SS] format (without the square bracket).`n(Leave blank to leave end time untouched)";
 }
 
 $finalecommand = "ab-av1 auto-encode -e $encoder -i $inputpath --keyint $inputkeyint --min-vmaf $inputminvmaf --preset $speed --acodec copy --min-crf 5";
@@ -50,6 +52,6 @@ if ($omitvfilter -eq "y") {
     Write-Host "$finalecommand";
 }
 else {
-    $finalecommandwithvfilter = "$finalecommand --vfilter 'fps=$inputframerate'"; 
+    $finalecommandwithvfilter = "$finalecommand --vfilter 'fps=$inputframerate,trim=start=$starttime,trim=end=$endtime'"; 
     Write-Host $finalecommandwithvfilter;
 }
