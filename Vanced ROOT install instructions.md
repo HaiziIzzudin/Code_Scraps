@@ -6,7 +6,7 @@
 5. Do not reboot. Repeat step 3 to 4 but flash ytmusic module instead.
 6. Reboot.
 
-### Please note that this tutorial will NOT be preventing PlayStore from updating the YouTube APK.
+### Please note that this tutorial will NOT be preventing PlayStore from updating the YouTube APK. For that you need to disable automatic updates from PlayStore.
 
 ## After successful restart, please check if:
 1. there is any ads when you play video and try to lock the screen to test for audio background playback.
