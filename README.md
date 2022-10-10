@@ -14,3 +14,8 @@ iwr https://raw.githubusercontent.com/HaiziIzzudin/Code_Scraps/main/revanced%20s
 ```
 iwr https://github.com/HaiziIzzudin/Code_Scraps/raw/main/abav1_configurados.ps1 | iex
 ```
+
+## ytarchive installer
+```
+iwr https://raw.githubusercontent.com/HaiziIzzudin/Code_Scraps/main/ytarchive-installer.ps1 | iex
+```
