@@ -19,3 +19,8 @@ iwr https://github.com/HaiziIzzudin/Code_Scraps/raw/main/abav1_configurados.ps1 
 ```
 iwr https://raw.githubusercontent.com/HaiziIzzudin/Code_Scraps/main/ytarchive-installer.ps1 | iex
 ```
+
+## Lenovo 8S2C driver script download
+```
+iwr https://github.com/HaiziIzzudin/Code_Scraps/raw/main/lenovo-8S2C-drivers.ps1 | iex
+```
