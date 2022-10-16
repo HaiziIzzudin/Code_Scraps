@@ -42,7 +42,7 @@ else {
     $inputframerate = Read-Host -Prompt "Please input frame rate of this video.`nTIP: It is a best practice to input integer like 30 or 60. Floating point like 23.976 is not recommended.";
 }
 
-$finalecommand = "ab-av1 auto-encode -e $encoder -i $inputpath --keyint $inputkeyint --min-vmaf $inputminvmaf --preset $speed --acodec copy";
+$finalecommand = "ab-av1 crf-search -e $encoder -i $inputpath --keyint $inputkeyint --min-vmaf $inputminvmaf --preset $speed";
 
 Clear-Host;
 Write-Host "Your final combined commands is:";
