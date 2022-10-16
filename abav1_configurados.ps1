@@ -3,7 +3,7 @@ Write-Host "This program will configure your ab-av1 parameters.";
 Write-Host "This program will ask several questions regarding your setups.";
 Write-Host "Type according to the instructions given.`n";
 
-$encChoose = Read-Host -Prompt "Please type A or B or C or D to choose either to use encoder:`n`n[A] SVT-AV1`n[B] H265`n[C] H264`n`nType neither to exit program.";
+$encChoose = Read-Host -Prompt "Please type A or B or C or D to choose either to use encoder:`n`n[A] SVT-AV1`n[B] H265`n[C] H264`n[D] AOM-AV1`n`nType neither to exit program.";
 if     ($encChoose -eq "A") { $encoder = "libsvtav1"; }
 elseif ($encChoose -eq "B") { $encoder = "libx265"; }
 elseif ($encChoose -eq "C") { $encoder = "libx264"; }
