@@ -66,8 +66,8 @@ $microg_msg = "Does your phone is non-rooted variants?";
 $rvncst = "-e settings "; # revanced settings +
 $rvncst_msg = "Do you want to change all the settings above after the fact?";
 
-$debugs = "-e enable-debugging "; # debugging by patching manifest file +
-$debugs_msg = "Are you a hacker?";
+$debugs = "-e debugging "; # debugging by patching manifest file +
+$debugs_msg = "Are you a debugging nerd?";
 
 $speeds = "-e custom-playback-speed "; # enable more playback speed +
 $speeds_msg = "Are you a lightspeed listener?";
@@ -87,19 +87,75 @@ $feedad_msg = "Do you hate ads in your feed?";
 $infcrd = "-e hide-infocard-suggestions "; # hide infocard -
 $infcrd_msg = "DO you find infocards misleading and unreliable?";
 
+# below is update 17.43.36
+
+$crowdf = "-e hide-crowdfunding-box" # hide crowdfunding box
+$crowdf_msg = "Do you find crowdfunding a scam?"
+
+$tiseek = "-e hide-time-and-seekbar" # do not hide time and seekbar on videos
+$tiseek_msg = "Do you feel that time and the seekbar really disturb your viewing?"
+
+$vibutt = "-e hide-video-buttons" # do not hide video button below the seekbar
+$vibutt_msg = "Do you find buttons below seekbar is disturbing?"
+
+$captcc = "-e hide-captions-button" # do not hide captoions (CC) button
+$captcc_msg = "Do you find CC button is disturbing your view?"
+
+$strtsh = "-e disable-startup-shorts-player" # do not disable startup shorts player
+$strtsh_msg = "Do you find it annoyying that youtube start playing shorts when you open youtube?"
+
+$watcvr = "-e hide-watch-in-vr" # do not hide watch in VR
+$watcvr_msg = "Are you not a VR enthusiasts?"
+
+$albumc = "-e hide-album-cards" # do not hide album cards
+$albumc_msg = "Do you find artists who promote his album is a scam?"
+
+$autply = "-e disable-auto-player-popup-panels" # do not disable popup panels
+$autply_msg = "Do you find popup panels of autoplayer disturbing?"
+
+$autocc = "-e disable-auto-captions" # do not disable auto captions
+$autocc_msg = "Do you find forcing youtube to generate CC is disturbing?"
+
+$hidart = "-e hide-artist-card" # do not hide artist card
+$hidart_msg = "Do you find artist card below the player disturbing?"
+
+$hidcom = "-e comments" # do not hide components related to comments
+$hidcom_msg = "Do you find comments disturbing?"
+
+$ctheme = "-e theme" # do not use custom themes
+$ctheme_msg = "Do you use custom themes?"
+
+$hideml = "-e hide-email-address" # do not hide email address
+$hideml_msg = "Do you like to show off your email on account selection?"
+
+$hidmix = "-e hide-my-mix" # do not hide my mix
+$hidmix_msg = "Do you find MY MIX disturbing?"
+
+$dlvids = "-e downloads" # do not add download functionality
+$dlvids_msg = "Are you an avid video archiver?"
+
+$cspoof = "-e client-spoof" # do not make client spoofing
+$cspoof_msg = "Do you want to spoof client? (This usually beneficial to prevent playback issues, we recommend YES)"
+
 $optionsarray = @(
     $swipec,$sektap,$bgpbck,$amoled,$ncreat,$ncastb,
     $rytdis,$hautop,$premiu,$rvncbr,$fscpnl,$olqual,
     $hshort,$hwtrmk,$spsrbk,$wisech,$tabply,$vidbuf,
     $autorp,$microg,$rvncst,$debugs,$speeds,$authdr,
-    $savqua,$midrol,$feedad,$infcrd
+    $savqua,$midrol,$feedad,$infcrd,$crowdf,$tiseek,
+    $vibutt,$captcc,$strtsh,$watcvr,$albumc,$autply,
+    $autocc,$hidart,$hidcom,$ctheme,$hideml,$hidmix,
+    $dlvids,$cspoof
 )
 $messagearray = @(
     $swipec_msg,$sektap_msg,$bgpbck_msg,$amoled_msg,$ncreat_msg,$ncastb_msg,
     $rytdis_msg,$hautop_msg,$premiu_msg,$rvncbr_msg,$fscpnl_msg,$olqual_msg,
     $hshort_msg,$hwtrmk_msg,$spsrbk_msg,$wisech_msg,$tabply_msg,$vidbuf_msg,
     $autorp_msg,$microg_msg,$rvncst_msg,$debugs_msg,$speeds_msg,$authdr_msg,
-    $savqua_msg,$midrol_msg,$feedad_msg,$infcrd_msg
+    $savqua_msg,$midrol_msg,$feedad_msg,$infcrd_msg,$crowdf_msg,$tiseek_msg,
+    $vibutt_msg,$captcc_msg,$strtsh_msg,$watcvr_msg,$albumc_msg,$autply_msg,
+    $autocc_msg,$hidart_msg,$hidcom_msg,$ctheme_msg,$hideml_msg,$hidmix_msg,
+    $dlvids_msg,$cspoof_msg
 )
 for ($i = 0; $i -lt $optionsarray.Count; $i++) {
     Write-Host $messagearray[$i];
