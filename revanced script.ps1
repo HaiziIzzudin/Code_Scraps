@@ -89,52 +89,52 @@ $infcrd_msg = "DO you find infocards misleading and unreliable?";
 
 # below is update 17.43.36
 
-$crowdf = "-e hide-crowdfunding-box" # hide crowdfunding box
+$crowdf = "-e hide-crowdfunding-box " # hide crowdfunding box
 $crowdf_msg = "Do you find crowdfunding a scam?"
 
-$tiseek = "-e hide-time-and-seekbar" # do not hide time and seekbar on videos
+$tiseek = "-e hide-time-and-seekbar " # do not hide time and seekbar on videos
 $tiseek_msg = "Do you feel that time and the seekbar really disturb your viewing?"
 
-$vibutt = "-e hide-video-buttons" # do not hide video button below the seekbar
+$vibutt = "-e hide-video-buttons " # do not hide video button below the seekbar
 $vibutt_msg = "Do you find buttons below seekbar is disturbing?"
 
-$captcc = "-e hide-captions-button" # do not hide captoions (CC) button
+$captcc = "-e hide-captions-button " # do not hide captoions (CC) button
 $captcc_msg = "Do you find CC button is disturbing your view?"
 
-$strtsh = "-e disable-startup-shorts-player" # do not disable startup shorts player
+$strtsh = "-e disable-startup-shorts-player " # do not disable startup shorts player
 $strtsh_msg = "Do you find it annoyying that youtube start playing shorts when you open youtube?"
 
-$watcvr = "-e hide-watch-in-vr" # do not hide watch in VR
+$watcvr = "-e hide-watch-in-vr " # do not hide watch in VR
 $watcvr_msg = "Are you not a VR enthusiasts?"
 
-$albumc = "-e hide-album-cards" # do not hide album cards
+$albumc = "-e hide-album-cards " # do not hide album cards
 $albumc_msg = "Do you find artists who promote his album is a scam?"
 
-$autply = "-e disable-auto-player-popup-panels" # do not disable popup panels
+$autply = "-e disable-auto-player-popup-panels " # do not disable popup panels
 $autply_msg = "Do you find popup panels of autoplayer disturbing?"
 
-$autocc = "-e disable-auto-captions" # do not disable auto captions
+$autocc = "-e disable-auto-captions " # do not disable auto captions
 $autocc_msg = "Do you find forcing youtube to generate CC is disturbing?"
 
-$hidart = "-e hide-artist-card" # do not hide artist card
+$hidart = "-e hide-artist-card " # do not hide artist card
 $hidart_msg = "Do you find artist card below the player disturbing?"
 
-$hidcom = "-e comments" # do not hide components related to comments
+$hidcom = "-e comments " # do not hide components related to comments
 $hidcom_msg = "Do you find comments disturbing?"
 
-$ctheme = "-e theme" # do not use custom themes
+$ctheme = "-e theme " # do not use custom themes
 $ctheme_msg = "Do you use custom themes?"
 
-$hideml = "-e hide-email-address" # do not hide email address
+$hideml = "-e hide-email-address " # do not hide email address
 $hideml_msg = "Do you like to show off your email on account selection?"
 
-$hidmix = "-e hide-my-mix" # do not hide my mix
+$hidmix = "-e hide-my-mix " # do not hide my mix
 $hidmix_msg = "Do you find MY MIX disturbing?"
 
-$dlvids = "-e downloads" # do not add download functionality
+$dlvids = "-e downloads " # do not add download functionality
 $dlvids_msg = "Are you an avid video archiver?"
 
-$cspoof = "-e client-spoof" # do not make client spoofing
+$cspoof = "-e client-spoof " # do not make client spoofing
 $cspoof_msg = "Do you want to spoof client? (This usually beneficial to prevent playback issues, we recommend YES)"
 
 $optionsarray = @(
