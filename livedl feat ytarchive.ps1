@@ -14,9 +14,12 @@ $gameName = Read-Host -Prompt "Enter in Game name";
 
 $folderName = ((Get-Date).tostring("yyMMdd")) + " " + $gameName;
 
+# Check if file gameName already available. If not, create one. Then, cd into it.
 if ((Test-Path -Path ".\Videos\$fullFolderName") -eq $True) {
     Set-Location ".\Videos\$fullFolderName";
 }
 else {
     mkdir ".\Videos\$fullFolderName" | Set-Location;
 }
+
+Invoke-Expression -Command "ytarchive $url best";
