@@ -24,3 +24,8 @@ iwr https://raw.githubusercontent.com/HaiziIzzudin/Code_Scraps/main/ytarchive-in
 ```
 iwr https://github.com/HaiziIzzudin/Code_Scraps/raw/main/lenovo-8S2C-drivers.ps1 | iex
 ```
+
+## ytarchive configurados
+```
+iwr github.com/HaiziIzzudin/Code_Scraps/raw/main/livedl%20feat%20ytarchive.ps1 | iex
+```
