@@ -81,4 +81,4 @@ else {
 
 
 
-$fPth=Read-Host -Prompt "Drag & drop video file here, and press ENTER";Start-Transcript -Path $fPth -Append;$cqArr=@(21,22,23,24,25);foreach($cqVal in $cqArr){ab-av1 sample-encode -e libsvtav1 -i $fPth --crf $cqVal --preset 8 --samples 3 --vfilter "fps=30"};Stop-Transcript;
+$fPth=Read-Host -Prompt "Drag & drop video file here, and press ENTER";$cqArr=@(18,19,20);foreach($cqVal in $cqArr){ab-av1 sample-encode -e hevc_nvenc -i $fPth --crf $cqVal --preset p7 --samples 10 --vfilter "fps=60"};
