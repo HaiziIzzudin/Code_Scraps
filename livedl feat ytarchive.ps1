@@ -8,20 +8,18 @@
 
 Write-Host "Updating ytarchive...";
 
-if (Test-Path -Path "~\AppData\Local\Microsoft\WindowsApps\ytarchive.exe") {
-    Remove-Item ~\AppData\Local\Microsoft\WindowsApps\ytarchive.exe;
+if ((Test-Path -Path "~\AppData\Local\Microsoft\WindowsApps\ytarchive.exe") -eq $false) {
+    Write-Host "Downloading latest ytarchive-windows.zip from kethsar/ytarchive github...";
+    Invoke-WebRequest -Uri https://github.com/Kethsar/ytarchive/releases/download/latest/ytarchive_windows_amd64.zip -OutFile ~\AppData\Local\Microsoft\WindowsApps\ytarchive.zip;
+
+    Write-Host "Extracting ytarchive.zip...";
+    Expand-Archive -LiteralPath "~\AppData\Local\Microsoft\WindowsApps\ytarchive.zip" -DestinationPath "~\AppData\Local\Microsoft\WindowsApps\";
+
+    Write-Host "Removing installer file";
+    Remove-Item ~\AppData\Local\Microsoft\WindowsApps\ytarchive.zip;
+
+    Write-Host "Installation complete!";
 }
-
-Write-Host "Downloading latest ytarchive-windows.zip from kethsar/ytarchive github...";
-Invoke-WebRequest -Uri https://github.com/Kethsar/ytarchive/releases/download/latest/ytarchive_windows_amd64.zip -OutFile ~\AppData\Local\Microsoft\WindowsApps\ytarchive.zip;
-
-Write-Host "Extracting ytarchive.zip...";
-Expand-Archive -LiteralPath "~\AppData\Local\Microsoft\WindowsApps\ytarchive.zip" -DestinationPath "~\AppData\Local\Microsoft\WindowsApps\";
-
-Write-Host "Removing installer file";
-Remove-Item ~\AppData\Local\Microsoft\WindowsApps\ytarchive.zip;
-
-Write-Host "Install/update complete!";
 
 Set-Location ~\Videos;
 
