@@ -4,6 +4,7 @@
 
 ## Linode User Initial Use
 ```
+#!/bin/bash
 sudo apt update && sudo apt upgrade -y; read -e -p "Enter in username: " usernamed; adduser $usernamed; usermod -aG sudo $usernamed; logout;
 ```
 
