@@ -32,7 +32,8 @@ function FuncPreset {
 function FuncSampleEncode {
     $fPth = Read-Host -Prompt "Drag & drop video file here, and press ENTER";
     $cqVal = Read-Host -Prompt "Enter CRF value to test";
-    Invoke-Expression -Command "ab-av1 sample-encode -e $encoder -i $fPth --crf $cqVal --preset  --samples 10" };
+    Invoke-Expression -Command "ab-av1 sample-encode -e $encoder -i $fPth --crf $cqVal --preset $speed --samples 10"
+}
 
 
 
