@@ -16,13 +16,6 @@ iwr https://raw.githubusercontent.com/HaiziIzzudin/Code_Scraps/main/revanced%20s
 
 
 
-## ytarchive installer
-```
-iwr https://raw.githubusercontent.com/HaiziIzzudin/Code_Scraps/main/ytarchive-installer.ps1 | iex
-```
-
-
-
 ## livedl feat. ytarchive
 ```
 iwr github.com/HaiziIzzudin/haizi_side_projects/raw/main/livedl%20feat%20ytarchive.ps1 | iex
