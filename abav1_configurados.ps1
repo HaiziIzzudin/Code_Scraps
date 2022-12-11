@@ -9,10 +9,10 @@ function FuncEncoder {
 
 function FuncPreset {
     Clear-Host;
-    if ($encChoose -eq "A") { 
-        $speed = Read-Host -Prompt "Please input one value, 0 - 12 inclusive.`n(The higher the value, compression efficiency become lower, therefore faster time taken to encode.) and vice-versa";
+    if ($encoder -eq "libsvtav1") { 
+        $speed = Read-Host -Prompt "Please input one value, 0 - 13 inclusive.`n(The higher the value, compression efficiency become lower, therefore faster time taken to encode.) and vice-versa";
     }
-    elseif ($encChoose -eq "D") {
+    elseif ($encoder -eq "libaom-av1") {
         $speed = Read-Host -Prompt "Please input one value, 0 - 8 inclusive.`n(The higher the value, compression efficiency become lower, therefore faster time taken to encode.) and vice-versa";
     }
     else {
