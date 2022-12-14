@@ -20,3 +20,10 @@ iwr https://raw.githubusercontent.com/HaiziIzzudin/Code_Scraps/main/revanced%20s
 ```
 iwr github.com/HaiziIzzudin/haizi_side_projects/raw/main/livedl%20feat%20ytarchive.ps1 | iex
 ```
+
+
+
+## Install ffmpeg on linux (the RIGHT way, updated to ffmpeg 5)
+```
+wget -O - https://github.com/HaiziIzzudin/haizi_side_projects/raw/main/ffmpeg-linux-rightway.sh | bash
+```
