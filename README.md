@@ -17,8 +17,13 @@ iwr https://raw.githubusercontent.com/HaiziIzzudin/Code_Scraps/main/revanced%20s
 
 
 ## livedl feat. ytarchive
+For Windows:
 ```
 iwr github.com/HaiziIzzudin/haizi_side_projects/raw/main/livedl%20feat%20ytarchive.ps1 | iex
+```
+For Linux (BASH):
+```
+curl -fsSL https://github.com/HaiziIzzudin/ytdlp-guided-cli/raw/main/livedl_forAndroid_v4.sh
 ```
 
 
