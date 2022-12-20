@@ -23,7 +23,7 @@ iwr github.com/HaiziIzzudin/haizi_side_projects/raw/main/livedl%20feat%20ytarchi
 ```
 For Linux (BASH):
 ```
-bash -c $(curl -fsSL https://github.com/HaiziIzzudin/ytdlp-guided-cli/raw/main/livedl_forAndroid_v4.sh)
+bash -c "$(curl -fsSL https://github.com/HaiziIzzudin/ytdlp-guided-cli/raw/main/livedl_forAndroid_v4.sh)"
 ```
 
 
