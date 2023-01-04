@@ -1,12 +1,5 @@
 # TOC
 
-## ReVanced exclusion configurator
-```
-iwr https://raw.githubusercontent.com/HaiziIzzudin/Code_Scraps/main/revanced%20script.ps1 | iex
-```
-
-
-
 ## livedl feat. ytarchive
 For Windows:
 ```
