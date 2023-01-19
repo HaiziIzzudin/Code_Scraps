@@ -1,0 +1,14 @@
+-crf 40 -c:v libaom-av1 -pix_fmt yuv420p -aom-params cpu-used=0:tune=ssim:deltaq-mode=3 -still-picture 1
+
+-lossless 1 -compression_level 6 -quality 100 -preset photo
+
+-crf 40 -c:v libaom-av1 -pix_fmt yuv420p10le -aom-params cpu-used=0:sharpness=1:enable-dnl-denoising=0:denoise-noise-level=30:tune=ssim:deltaq-mode=3 -still-picture 1
+
+for f in *.png; do ffmpeg -i "$f" -c:v libwebp -compression_level 6 -quality 100 -preset photo "${f}.webp"; done
+
+-crf 35 -c:v libaom-av1 -pix_fmt yuv420p10le -aom-params cpu-used=1:sharpness=1:enable-dnl-denoising=0:denoise-noise-level=25:tune=ssim:deltaq-mode=3 -still-picture 1
+
+-crf 30 -c:v libaom-av1 -pix_fmt yuv420p10le -aom-params cpu-used=2:sharpness=1:enable-dnl-denoising=0:denoise-noise-level=25:tune=ssim:deltaq-mode=3 -still-picture 1
+
+yt-dlp $url -f ba -x --audio-format mp3 --audio-quality 0 --embed-thumbnail
+
