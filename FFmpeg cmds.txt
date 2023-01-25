@@ -12,3 +12,8 @@ for f in *.png; do ffmpeg -i "$f" -c:v libwebp -compression_level 6 -quality 100
 
 yt-dlp $url -f ba -x --audio-format mp3 --audio-quality 0 --embed-thumbnail
 
+# dynaudnorm audio only
+ffmpeg -i "videoin.mp3" -c:a aac -b:a 192k -af dynaudnorm=f=10:g=3:m=35 -movflags use_metadata_tags "outfile.mp3"
+
+# dynaudnorm audio only, but with video
+ffmpeg -i "videoin.mp4" -c:v copy -c:a aac -b:a 192k -af dynaudnorm=f=10:g=3:m=35 -movflags use_metadata_tags "outfile.mp4"
