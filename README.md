@@ -11,6 +11,12 @@ bash -c "$(curl -fsSL https://github.com/HaiziIzzudin/ytdlp-guided-cli/raw/main/
 ```
 
 
+## livedl lite
+```
+iwr raw.githubusercontent.com/HaiziIzzudin/haizi_side_projects/main/livedl_lite.ps1 | iex
+```
+
+
 
 ## Install ffmpeg on linux (the RIGHT way, updated to ffmpeg 5)
 ```
