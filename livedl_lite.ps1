@@ -36,4 +36,4 @@ else {
     mkdir ".\$folderName" | Set-Location;
 }
 
-Invoke-Expression -Command "ytarchive $url 720p60";
+Invoke-Expression -Command "ytarchive $url 720p";
